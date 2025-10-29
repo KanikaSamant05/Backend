@@ -1,0 +1,19 @@
+<%- include("includes/head.ejs") %>
+<title>Roll Dice</title>
+</head>
+<body>
+    <!-- <h1>Dice gave value:
+        <%= Math.floor(Math.random()*6)+1 %>
+     </h1> -->
+
+     <!-- Now finding the random dice no. through the database which is stored in index.js -->
+      <h1>Dice gave value: <%= diceVal %> </h1>
+    <!-- OR <h1>Dice gave value: <%= num %> </h1> -->
+     <!-- FOR CONDITIONAL STATEMENT <% %> TAG IS USED -->
+      <% if(diceVal==6){ %>
+        <h2>Nice! Roll dice again</h2>
+      <% } %>
+
+
+</body>
+</html>
